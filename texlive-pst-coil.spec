@@ -52,6 +52,7 @@ for coil and zigzag node connections.
 %doc %{_texmfdistdir}/doc/generic/pst-coil/pst-coil-doc.tex
 #- source
 %doc %{_texmfdistdir}/source/generic/pst-coil/Makefile
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -62,3 +63,5 @@ for coil and zigzag node connections.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
