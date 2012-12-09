@@ -53,3 +53,17 @@ for coil and zigzag node connections.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.06-2
++ Revision: 755228
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.06-1
++ Revision: 719340
+- texlive-pst-coil
+- texlive-pst-coil
+- texlive-pst-coil
+- texlive-pst-coil
+
