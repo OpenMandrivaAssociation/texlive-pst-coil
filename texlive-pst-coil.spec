@@ -6,7 +6,7 @@
 # catalog-version 1.06
 Name:		texlive-pst-coil
 Version:	1.06
-Release:	8
+Release:	9
 Summary:	A PSTricks package for coils, etc
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-coil
