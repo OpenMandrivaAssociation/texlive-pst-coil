@@ -1,12 +1,12 @@
 Name:		texlive-pst-coil
-Version:	1.07
-Release:	3
+Version:	62977
+Release:	1
 Summary:	A PSTricks package for coils, etc
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-coil
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-coil.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-coil.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-coil.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-coil.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -17,12 +17,12 @@ Pst-coil is a PSTricks based package for coils and zigzags and
 for coil and zigzag node connections.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -33,7 +33,7 @@ for coil and zigzag node connections.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
