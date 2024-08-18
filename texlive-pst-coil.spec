@@ -1,6 +1,6 @@
 Name:		texlive-pst-coil
-Version:	62977
-Release:	2
+Version:	72030
+Release:	1
 Summary:	A PSTricks package for coils, etc
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-coil
